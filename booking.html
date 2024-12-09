@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        .containerf {
+            margin: 20px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            flex-wrap: nowrap;
+
+        }
+
+        .containerfooter {
+            margin: 40px;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+
+        label {
+            color: lightgray;
+        }
+
+        h2 {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            color: lightyellow;
+        }
+        .containerform {
+            padding: 100px;
+            background-color: #212529;
+            border: 1px solid whitesmoke;
+            text-align: center;
+            justify-items: center;
+        }
+    </style>
+</head>
+
+<body style="background-color:#212529;">
+    <div class="container-fluid">
+        <!--navbar-->
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand"><img src="image/Hometownpng.png" alt="hometown" style="width: 150px;"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html" target="_blank">Homepage</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="room.html" target="_blank">Room</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        
+        <p style="text-align: center; margin-top: 100px;"><img src="image/booking.jpg" alt="booking" style="height: 250px; width: auto;"></p>
+        <div class="container mt-3 containerform">
+            <form action="https://httpbin.org/post" method="post" class="was-validated">
+                <div class="mb-3 mt-3">
+                    <p style="text-align: center;"><img src="image/logo.png" alt="logo" style="height: 250px; width: auto;"></p>
+                    <h2>Personal information</h2>
+                    <label for="name" class="form-label">name-surname :</label>
+                    <input type="text" style="width: 500px;" class="form-control" id="name" placeholder="Enter name-surname" name="name"
+                        required>
+                    <div class="valid-feedback">ชื่อและนามสกุลถูกต้อง</div>
+                    <div class="invalid-feedback">ยังไม่ได้กรอกชื่อและนามสกุล</div>
+                </div>
+
+                <div class="mb-3">
+                    <label for="tel" class="form-label">telephone :</label>
+                    <input type="text" style="width: 500px;" class="form-control" id="pwd" placeholder="Enter telephone number" name="tel"
+                        required>
+                    <div class="valid-feedback">เบอร์โทรศัพท์ถูกต้อง</div>
+                    <div class="invalid-feedback">ยังไม่ได้กรอกเบอร์โทรศัพท์</div>
+                </div>
+
+                <div class="mb-3">
+                    <label for="email" class="form-label">email :</label>
+                    <input type="email" style="width: 500px;" class="form-control" id="pwd" placeholder="Enter email" name="email" required>
+                    <div class="valid-feedback">อีเมลถูกต้อง</div>
+                    <div class="invalid-feedback">ยังไม่ได้กรอกอีเมล หรืออีเมลไม่ถูกต้อง</div>
+                </div>
+
+                <hr style="color: whitesmoke;">
+                <h2>Select room type</h2>
+
+                <input class="form-check-input" type="checkbox" id="Superior" name="room_superior"
+                    value="Superior Room">
+                <label for="Superior">Superior</label><br>
+                <br>
+                <img src="image/SUperior3.jpg" alt="superior" style="width: 400px; height: 200px;"><br>
+                <br><br>
+
+                <input class="form-check-input" type="checkbox" id="Deluxe" name="room_deluxe" value="Deluxe Room">
+                <label for="Deluxe">Deluxe</label><br>
+                <br>
+                <img src="image/deluxe1.jpg" alt="superior" style="width: 400px; height: 200px;"><br>
+                <br><br>
+
+                <input class="form-check-input" type="checkbox" id="Villas" name="room_villas" value="Villas Room">
+                <label for="Villas">Villas</label><br>
+                <br>
+                <img src="image/villas1.jpg" alt="superior" style="width: 400px; height: 200px;"><br>
+                <br><br>
+
+                <hr style="color: whitesmoke;">
+                <h2>Select date</h2>
+
+                <label for="checkin" class="form-label">check-in date :</label>
+                <input class="form-label" type="date" id="checkin" name="date_checkin"><br>
+
+                <label for="checkout" class="form-label">check-out date :</label>
+                <input class="form-label" type="date" id="checkout" name="date_checkout"><br>
+
+                <p style="text-align: center;"><img src="image/booknow.png" alt="logo" style="height: 250px; width: auto;"></p>
+                <button type="submit" class="btn btn-light" style="margin-top: 50px;">Booking</button>
+            </form>
+
+        </div>
+
+
+
+
+        <!--footer-->
+        <div style="margin-top: 20px;">
+            <footer class="bg-dark text-white" style="width: auto; height: auto;">
+
+                <div class="containerf">
+                    <img src="image/Hometownpng.png" alt="hometown" style="width: auto;height: 250px; margin: 5px;">
+
+                    <div class="containerfooter">
+                        <p>ADDRESS</p>
+                        <address>
+                            214 Moo3, Muang kao (Old Town), Muang, Historical Park, Sukhothai, Thailand 64210
+                        </address>
+                    </div>
+                    <div class="containerfooter">
+                        <p>CONTACT</p>
+                        <p>telephone :</p>
+                        <h4>+66 (0) 88 404 484</h4>
+                        <p>E-mail : hometownsukhothai@gmail.com<br>
+                            Line ID : @hometownskt</p>
+                    </div>
+                    <div class="containerfooter">
+                        <p>AWARD</p>
+                        <img src="image/agoda.png" alt="agoda" width="120px" height="120px">
+                        <img src="image/sha.png" alt="sha" width="120px" height="120px">
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

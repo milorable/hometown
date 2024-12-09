@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Room</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        .containerf {
+            margin: 20px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            flex-wrap: nowrap;
+
+        }
+
+        .containerfooter {
+            margin: 40px;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+
+        h3 {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .containerroom {
+            margin: 20px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            flex-wrap: nowrap;
+        }
+
+        .columnc {
+            margin: 20px;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+
+        .rowr {
+            margin: 20px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+
+<body style="background-color:#212529;">
+    <div class="container-fluid">
+        <!--navbar-->
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand"><img src="image/Hometownpng.png" alt="hometown" style="width: 150px;"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html" target="_blank">Homepage</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="booking.html" target="_blank">Booking</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!--carousel-->
+        <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+            <!-- Indicators/dots -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+            </div>
+
+            <!-- The slideshow/carousel -->
+            <div class="container-fluid">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="image/SUperior1.jpg" alt="superior" class="d-block"
+                            style="height: 600px; width: 100%; ">
+                        <div class="carousel-caption">
+                            <h3>ROOM</h3>
+                            <p style="font-family: 'Courier New', Courier, monospace;">Superior</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="image/deluxe1.jpg" alt="deluxe" class="d-block" style="height: 600px;width: 100%; ">
+                        <div class="carousel-caption">
+                            <h3>ROOM</h3>
+                            <p style="font-family: 'Courier New', Courier, monospace;">Deluxe</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="image/villas1.jpg" alt="villas" class="d-block" style="height: 600px;width: 100%; ">
+                        <div class="carousel-caption">
+                            <h3>ROOM</h3>
+                            <p style="font-family: 'Courier New', Courier, monospace;">Villas</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <!-- Left and right controls/icons -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+
+        <div class="container-fluid" style="margin-top:80px;">
+            <!--superior-->
+            <div class="containerroom">
+                <div class="columnc">
+                    <h2 style="color:lightyellow;">SUPERIOR ROOM</h2>
+
+                    <p style="color: darkgrey;">- 28 sqm -<br>
+                        <br>
+                        2,000 THB/DAY<br>
+                        <br>
+                        <br>
+                        Superior rooms are cozy set amongst remarkable Thai village ambience.<br>
+                        <br>
+                        Each room is delicately decorated with a sense of Thai classic style along with wooden floor and
+                        furniture. Generous in-room amenities are provided to deliver you the utmost relaxation
+                        including
+                        TV,
+                        refrigerator, wardrobe, hot shower, bathtub, bathroom amenities and so forth.
+                    </p>
+                    <div class="rowr">
+                        <p style="color: darkgrey;">- Individually controlled air-conditioning<br>
+                            - Refrigerator & mini bar<br>
+                            - Working & Dressing table<br>
+                            - Cloth Rack<br>
+                            - Day-bed / sofa bed<br>
+                            - Hairdryer<br>
+                            - Hot shower<br>
+                        </p>
+                        <p style="color: darkgrey;">- Satellite TV<br>
+                            - IDD telephone<br>
+                            - Umbrella<br>
+                            - Tea and coffee making facilities<br>
+                            - Hi-speed internet access<br>
+                            - Complimentary bottled water<br>
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="columnc">
+                    <img src="image/SUperior3.jpg" alt="superior" style="width: 400px; height: 250px;">
+                    <img src="image/SUperior2.jpg" alt="superior" style="width: 400px; height: 250px;">
+                </div>
+            </div>
+
+            <hr style="color: whitesmoke;">
+            <!--deluxe-->
+            <div class="containerroom">
+                <div class="columnc">
+                    <h2 style="color:lightyellow;">DELUXE ROOM</h2>
+
+                    <p style="color: darkgrey;">- 30 sqm -<br>
+                        <br>
+                        3,500 THB/DAY<br>
+                        <br>
+                        <br>
+                        Deluxe rooms are spacious and offering distinguish greenery views from each room.<be></be>
+                        <br>
+                        All rooms are set in Thai village surrounding. In-room amenities are fully equipped to attend
+                        your pamper stay with us.<br>
+                        <br>
+                        <be></be>
+                        Type of occupancy 1 King sized / 2 Single beds Max. 4 persons* / room. Good with 2 adults & 1
+                        children.<br>(* 3rd - 4th person small surcharge applied.)
+                    </p>
+                    <div class="rowr">
+                        <p style="color: darkgrey;">- Individually controlled air-conditioning<br>
+                            - Refrigerator & mini bar<br>
+                            - Working & Dressing table<br>
+                            - Cloth Rack<br>
+                            - Day-bed / sofa bed<br>
+                            - Hairdryer<br>
+                            - Hot shower<br>
+                        </p>
+                        <p style="color: darkgrey;">- Satellite TV<br>
+                            - IDD telephone<br>
+                            - Umbrella<br>
+                            - Tea and coffee making facilities<br>
+                            - Hi-speed internet access<br>
+                            - Complimentary bottled water<br>
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="columnc">
+                    <img src="image/deluxe3.jpg" alt="deluxe" style="width: 400px; height: 250px;">
+                    <img src="image/deluxe2.jpg" alt="deluxe" style="width: 400px; height: 250px;">
+                </div>
+            </div>
+            <hr style="color: whitesmoke;">
+            <!--villas-->
+            <div class="containerroom">
+                <div class="columnc">
+                    <h2 style="color:lightyellow;">TWO BEDROOM VILLAS</h2>
+
+                    <p style="color: darkgrey;">5,000 THB/DAY<br>
+                        <br>
+                        This 2 bedroom Villa is a perfect fit for families with children at all
+                        ages as well as a group of friends.<br>
+                        <br>
+                        The villa features 2 separate rooms. They have their own bathroom and a shared living area and
+                        also wheelchair is not accessible. All rooms including the living room have a LED TV with
+                        international channels. Our villas have their own private balcony overlooking Mae-Rampan canal
+                        and the Thai tradition garden.<br>
+                        <br>
+                        <br>
+                        Bed Type: 2 King Size Bedrooms<br>
+                        Occupancy: 4 persons (max. 5 with an extra bed in the living room)<br>
+                        Villa Size: 60 sq. m<br>
+                        Special benefit: Fruit Basket & Free mini bar upon arrival
+                    </p>
+                    <div class="rowr">
+                        <p style="color: darkgrey;">- Individually controlled air-conditioning<br>
+                            - Wi-Fi<br>
+                            - Balcony/Terrace<br>
+                            - Blackout Curtain<br>
+                            - Sofa bed<br>
+                            - Clothe rack<br>
+                            - Sitting area (Living room)<br>
+                            - Refrigerator<br>
+                            - Umbrella<br>
+                            - Dressing table<br>
+                            - Teakwood furniture<br>
+                            - Complimentary bottled water<br>
+                        </p>
+                        <p style="color: darkgrey;">- Coffee/Tea making facilities<br>
+                            - Electric kettle<br>
+                            - Toiletries<br>
+                            - Bathub<br>
+                            - Hot water<br>
+                            - Hairdryer<br>
+                            - Slippers<br>
+                            - LED TV<br>
+                            - Cable channels<br>
+                            - DVD Player<br>
+                            - IDD Telephone<br>
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="columnc">
+                    <img src="image/villas2.jpg" alt="villas" style="width: 400px; height: 250px;">
+                    <img src="image/villas3.jpg" alt="villas" style="width: 400px; height: 250px;">
+                </div>
+            </div>
+            <hr style="color: whitesmoke;">
+
+
+        </div>
+
+
+
+        <!--footer-->
+        <div style="margin-top: 20px;">
+            <footer class="bg-dark text-white" style="width: auto; height: auto;">
+
+                <div class="containerf">
+                    <img src="image/Hometownpng.png" alt="hometown" style="width: auto;height: 250px; margin: 5px;">
+
+                    <div class="containerfooter">
+                        <p>ADDRESS</p>
+                        <address>
+                            214 Moo3, Muang kao (Old Town), Muang, Historical Park, Sukhothai, Thailand 64210
+                        </address>
+                    </div>
+                    <div class="containerfooter">
+                        <p>CONTACT</p>
+                        <p>telephone :</p>
+                        <h4>+66 (0) 88 404 484</h4>
+                        <p>E-mail : hometownsukhothai@gmail.com<br>
+                            Line ID : @hometownskt</p>
+                    </div>
+                    <div class="containerfooter">
+                        <p>AWARD</p>
+                        <img src="image/agoda.png" alt="agoda" width="120px" height="120px">
+                        <img src="image/sha.png" alt="sha" width="120px" height="120px">
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
